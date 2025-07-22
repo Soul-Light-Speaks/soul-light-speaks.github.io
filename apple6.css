@@ -1,0 +1,15 @@
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: #fffaf0;
+  color: #333;
+  padding: 30px;
+}
+
+h1 {
+  color: #b85c38;
+}
+
+a {
+  text-decoration: none;
+  color: #4a90e2;
+}
