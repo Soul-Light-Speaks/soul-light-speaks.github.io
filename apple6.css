@@ -1,1 +1,40 @@
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: #fffaf0;
+  color: #333;
+  padding: 30px;
+}
 
+h1 {
+  color: #b85c38;
+}
+
+a {
+  text-decoration: none;
+  color: #4a90e2;
+}
+
+.topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.topic {
+  width: 200px; /* 圖片和整個區塊寬度 */
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.topic img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.topic-title {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
