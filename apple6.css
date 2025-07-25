@@ -17,11 +17,13 @@ a {
 .topics {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 24px;              /* 圖與圖之間的間距 */
+  padding: 0 48px;        /* 左右邊距空間，防止貼邊 */
+  justify-content: flex-start;
 }
 
 .topic {
-  width: 200px; /* 圖片和整個區塊寬度 */
+  width: 180px;           /* 每張卡片寬度固定，看起來整齊 */
   text-align: center;
   text-decoration: none;
   color: #333;
@@ -29,12 +31,14 @@ a {
 
 .topic img {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
+  height: 270px;          /* 直立圖的高度，會一樣高 */
+  object-fit: cover;      /* 圖片填滿區域但不變形 */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .topic-title {
   margin-top: 8px;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 500;
 }
