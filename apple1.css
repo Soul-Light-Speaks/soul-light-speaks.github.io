@@ -18,10 +18,13 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  padding-left: 40px; /* 左邊留白 */
+  padding-right: 40px; /* 可選：右邊也留白 */
 }
 
 .topic {
-  width: 200px; /* 圖片和整個區塊寬度 */
+  width: calc(20% - 20px); /* 每排最多5個，扣掉 gap */
+  box-sizing: border-box;
   text-align: center;
   text-decoration: none;
   color: #333;
@@ -29,7 +32,8 @@ a {
 
 .topic img {
   width: 100%;
-  height: auto;
+  height: 150px;       /* 固定高度，讓圖片一致 */
+  object-fit: cover;   /* 圖片超過會裁切，但比例固定 */
   border-radius: 10px;
 }
 
