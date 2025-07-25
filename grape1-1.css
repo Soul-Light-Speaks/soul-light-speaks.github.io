@@ -24,42 +24,24 @@ a:hover {
   text-decoration: underline;
 }
 
-/* 主要內容圖片樣式 */
-img {
+/* 針對一般圖片（非 .image-row 內） */
+body > img {
   display: block;
-  margin: 30px auto;        /* 圖片置中並留間距 */
-  width: 300px;              /* 控制圖片寬度 */
-  height: auto;              /* 等比例縮放 */
-  border-radius: 12px;       /* 圓角（可選） */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* 陰影效果 */
+  margin: 30px auto;    /* 置中並上下留空 */
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* 段落文字 */
-p {
-  margin-bottom: 20px;
-  font-size: 18px;
-  text-align: center;
-}
-
-/* 頁腳 */
-footer {
-  margin-top: 50px;
-  text-align: center;
-  font-size: 14px;
-  color: #777;
-}
-
+/* flex 容器，讓圖片水平排列並置中 */
 .image-row {
-  display: flex;                 /* 讓子元素水平排列 */
-  justify-content: center;       /* 水平置中 */
-  gap: 20px;                    /* 圖片間距 */
-  margin: 30px 0;               /* 上下間距 */
+  display: flex;
+  justify-content: center;
+  gap: 20px;         /* 圖片間距 */
+  margin: 30px 0;    /* 容器上下間距 */
 }
 
+/* .image-row 裡的圖片 */
 .image-row img {
-  display: block;               /* 取消 inline 狀態 */
-  width: 300px;                 /* 固定寬度 */
-  height: auto;                 /* 等比例縮放高度 */
-  border-radius: 12px;          /* 圓角 */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 陰影 */
-}
+  display: block;
