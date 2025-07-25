@@ -48,3 +48,18 @@ footer {
   font-size: 14px;
   color: #777;
 }
+
+.image-row {
+  display: flex;                 /* 讓子元素水平排列 */
+  justify-content: center;       /* 水平置中 */
+  gap: 20px;                    /* 圖片間距 */
+  margin: 30px 0;               /* 上下間距 */
+}
+
+.image-row img {
+  display: block;               /* 取消 inline 狀態 */
+  width: 300px;                 /* 固定寬度 */
+  height: auto;                 /* 等比例縮放高度 */
+  border-radius: 12px;          /* 圓角 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 陰影 */
+}
