@@ -60,15 +60,13 @@
     }
   .img-wrapper {
   width: 100%;
-  max-width: 100%;
-  aspect-ratio: 2 / 3; /* 控制比例一致，避免有些圖過高 */
-  overflow: hidden;
-    }
-
-  .img-wrapper img {
+  aspect-ratio: 2 / 3;    /* 你想要圖片呈現的比例，可以改為 3 / 4 看需要 */
+  overflow: hidden;       /* 避免圖片超出邊框 */
+   }
+.img-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: contain;    /* 保留整張圖片不裁切，改成 cover 會裁掉多餘部分 */
   display: block;
    }
 @media (max-width: 600px) {
