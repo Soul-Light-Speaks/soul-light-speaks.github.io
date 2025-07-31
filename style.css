@@ -63,4 +63,8 @@
       border-top: 1px solid #eee;
       padding-top: 20px;
     }
-
+    img.fix-rotate {
+  transform: rotate(90deg);
+  width: auto;
+  height: 400px; /* 你可改成想要的高度 */
+    }
