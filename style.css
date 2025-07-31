@@ -63,8 +63,10 @@
       border-top: 1px solid #eee;
       padding-top: 20px;
     }
-    img.fix-rotate {
-  transform: rotate(90deg);
+    img.full-img {
+  height: auto;
+  max-height: none;
   width: auto;
-  height: 400px; /* 你可改成想要的高度 */
-    }
+  display: block;
+}
+
