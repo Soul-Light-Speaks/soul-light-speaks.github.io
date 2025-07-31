@@ -63,10 +63,16 @@
       border-top: 1px solid #eee;
       padding-top: 20px;
     }
-    img.full-img {
+  .img-wrapper {
+  width: 100%;          /* 或設定最大寬度：max-width: 600px */
+  max-width: 500px;      /* 控制圖片不要太寬 */
+  margin: 0 auto;
+}
+
+.img-wrapper img {
+  width: 100%;
   height: auto;
-  max-height: none;
-  width: auto;
   display: block;
+  object-fit: contain;
 }
 
