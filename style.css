@@ -1,77 +1,122 @@
-    body {
-      font-family: "Helvetica Neue", sans-serif;
-      background-color: #fff;
-      color: #333;
-      margin: 0;
-      padding: 20px;
-      text-align: center;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    h1 {
-      font-size: 2.8em;
-      letter-spacing: 2px;
-      margin-bottom: 0.2em;
-    }
-    .intro-text {
-      font-size: 1em;
-      line-height: 1.6em;
-      max-width: 600px;
-      margin: 0 auto 1.8em;
-      color: #555;
-    }
-    .smaller-text {
-      font-size: 0.85em;
-      line-height: 1.6em;
-      max-width: 500px;
-      margin: 0 auto 2em;
-      color: #666;
-    }
-    .topics {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 25px;
-      margin-bottom: 2em;
-    }
-    .topic {
+body {
+  font-family: "Helvetica Neue", "Segoe UI", sans-serif;
+  background-color: #FAF3E0;  /* 溫柔米黃背景 */
+  color: #333333;             /* 深灰文字 */
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+/* === 標題樣式 === */
+h1, h2, h3 {
+  color: #5A3E2B;     /* 溫棕色標題，有穩定感 */
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.8em;
+  letter-spacing: 2px;
+  margin-bottom: 0.2em;
+}
+
+/* === 文案與副段落 === */
+.intro-text {
+  font-size: 1em;
+  line-height: 1.6em;
+  max-width: 600px;
+  margin: 0 auto 1.8em;
+  color: #4B3F32;     /* 暖棕中帶灰，閱讀柔和 */
+}
+
+.smaller-text {
+  font-size: 0.85em;
+  line-height: 1.6em;
+  max-width: 500px;
+  margin: 0 auto 2em;
+  color: #5C5040;     /* 深一點的奶茶色 */
+}
+
+/* === 主題卡片排版 === */
+.topics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 2em;
+}
+
+.topic {
   width: 250px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* 柔和卡片陰影 */
   overflow: hidden;
   transition: transform 0.3s;
   text-decoration: none;
   color: inherit;
-    }
-    .topic:hover {
-      transform: scale(1.03);
-    }
-    .topic-title {
-      background-color: #fff;
-      font-weight: bold;
-      padding: 12px 0;
-    }
-    footer {
-      font-size: 1em;
-      color: #aaa;
-      border-top: 1px solid #eee;
-      padding-top: 20px;
-    }
-  .img-wrapper {
+  background-color: #FFFFFF; /* 保持內容區乾淨白 */
+}
+
+.topic:hover {
+  transform: scale(1.03);
+}
+
+/* === 卡片標題區塊 === */
+.topic-title {
+  background-color: #fff;
+  font-weight: bold;
+  padding: 12px 0;
+  color: #5A3E2B; /* 一致溫棕色調 */
+}
+
+/* === 圖片區塊（保留比例） === */
+.img-wrapper {
   width: 100%;
-  aspect-ratio: 2 / 3;    /* 你想要圖片呈現的比例，可以改為 3 / 4 看需要 */
-  overflow: hidden;       /* 避免圖片超出邊框 */
-   }
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+}
+
 .img-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: contain;    /* 保留整張圖片不裁切，改成 cover 會裁掉多餘部分 */
+  object-fit: contain;
   display: block;
-   }
+  border-radius: 0;
+}
+
+/* === 全站連結樣式 === */
+a {
+  color: #9C6B30; /* 暖棕色連結 */
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #C4823E; /* 橘金色 hover 效果 */
+  text-decoration: underline;
+}
+
+/* === 頁尾樣式 === */
+footer {
+  font-size: 1em;
+  color: #999999;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  margin-top: 40px;
+}
+
+/* === 手機響應調整 === */
 @media (max-width: 600px) {
   .topic {
     max-width: 90%;
   }
-}
 
+  .intro-text,
+  .smaller-text {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
