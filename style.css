@@ -40,6 +40,11 @@ h1 {
   color: #5C5040;     /* 深一點的奶茶色 */
 }
 
+blockquote.smaller-text {
+  font-style: italic;
+  color: #6B5A48;
+}
+
 /* === 主題卡片排版 === */
 .topics {
   display: flex;
