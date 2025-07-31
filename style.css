@@ -36,21 +36,16 @@
       margin-bottom: 2em;
     }
     .topic {
-      width: 250px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      overflow: hidden;
-      transition: transform 0.3s;
-      text-decoration: none;
-      color: inherit;
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  text-decoration: none;
+  color: inherit;
     }
     .topic:hover {
       transform: scale(1.03);
-    }
-    .topic img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
     }
     .topic-title {
       background-color: #fff;
@@ -64,15 +59,15 @@
       padding-top: 20px;
     }
   .img-wrapper {
-  width: 100%;          /* 或設定最大寬度：max-width: 600px */
-  max-width: 500px;      /* 控制圖片不要太寬 */
-  margin: 0 auto;
-}
-
-.img-wrapper img {
   width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
-}
+  max-width: 100%;
+  aspect-ratio: 2 / 3; /* 控制比例一致，避免有些圖過高 */
+  overflow: hidden;
+    }
 
+  .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+   }
