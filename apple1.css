@@ -23,7 +23,7 @@ a {
 }
 
 .topic {
-  width: 375px;           /* 卡片寬度放大 */
+  width: 390px;           /* 卡片寬度放大 */
   text-align: center;
   text-decoration: none;
   color: #333;
@@ -39,7 +39,7 @@ a {
 
 .topic-title {
   margin-top: 12px;
-  font-size: 1.5rem;  /* 調小字體 */
+  font-size: 1.8rem;  /* 調小字體 */
   line-height: 1.6;    /* 緊湊行高 */
   font-weight: 600;
 }
