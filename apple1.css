@@ -39,7 +39,7 @@ a {
 
 .topic-title {
   margin-top: 12px;
-  font-size: 1rem;  /* 調小字體 */
-  line-height: 1.4;    /* 緊湊行高 */
+  font-size: 1.2rem;  /* 調小字體 */
+  line-height: 1.6;    /* 緊湊行高 */
   font-weight: 600;
 }
