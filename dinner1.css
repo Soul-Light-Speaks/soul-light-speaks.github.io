@@ -27,6 +27,15 @@ a:hover {
   text-decoration: underline;
 }
 
+.back-link {
+  text-align: center;
+  margin-bottom: 20px; /* 增加間距 */
+}
+
+.back-link a {
+  display: inline-block; /* 讓連結可設定寬度及置中 */
+}
+
 /* 單張圖片樣式 */
 img.single-image {
   display: block;
