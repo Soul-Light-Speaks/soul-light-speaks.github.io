@@ -13,7 +13,7 @@ h1 {
   margin-bottom: 20px;
   font-size: 1.2rem;
   line-height: 1.5;
-  text-align: center;
+  text-align: left; /* 改成靠左 */
 }
 
 /* 返回連結 */
@@ -40,7 +40,6 @@ header {
 .back-link {
   text-align: left;
   margin-bottom: 20px;
-  padding-left: 40px;
 }
 
 /* 單張圖片樣式 */
