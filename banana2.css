@@ -30,7 +30,7 @@ a:hover {
 img {
   display: block;
   margin: 30px auto;
-  width: 80%;         /* 根據螢幕大小調整 */
+  width: 30%;         /* 根據螢幕大小調整 */
   max-width: 600px;   /* 限制最大寬度 */
   height: auto;
   border-radius: 12px;
