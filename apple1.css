@@ -17,13 +17,13 @@ a {
 .topics {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;              /* 圖與圖之間的間距 */
+  gap: 40px;              /* 圖與圖之間的間距 */
   padding: 0 48px;        /* 左右邊留白 */
   justify-content: flex-start;
 }
 
 .topic {
-  width: 400px;           /* 卡片寬度放大 */
+  width: 395px;           /* 卡片寬度放大 */
   text-align: center;
   text-decoration: none;
   color: #333;
