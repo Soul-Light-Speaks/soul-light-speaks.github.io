@@ -31,7 +31,7 @@ a:hover {
 img.single-image {
   display: block;
   margin: 30px auto;
-  width: 30%;
+  width: 20%;
   max-width: 600px;
   height: auto;
   border-radius: 12px;
@@ -50,8 +50,9 @@ img.single-image {
 
 /* 多張圖片樣式 */
 .image-grid img {
-  width: 100%;
+  width: 60%;
   height: auto;
+  margin: 0 auto; /* 加這行讓圖片置中 */
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -67,7 +68,7 @@ img.single-image {
 /* 段落文字 */
 p {
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 24px;
   text-align: center;
 }
 
