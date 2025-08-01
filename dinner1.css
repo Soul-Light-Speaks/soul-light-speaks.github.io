@@ -34,6 +34,7 @@ a:hover {
 
 .back-link a {
   display: inline-block; /* 讓連結可設定寬度及置中 */
+  font-size: 20px; /* ← 你可以調整數字大小 */
 }
 
 /* 單張圖片樣式 */
