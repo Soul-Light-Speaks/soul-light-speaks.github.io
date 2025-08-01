@@ -81,7 +81,7 @@ footer {
 }
 
 /* RWD 手機版調整 */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   h1 {
     font-size: 1.5rem;
   }
