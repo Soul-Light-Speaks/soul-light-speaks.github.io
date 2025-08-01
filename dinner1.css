@@ -46,6 +46,7 @@ img.single-image {
   max-width: 960px;
   margin: 40px auto;
   padding: 0 20px;
+  text-align: center; /* 確保圖片+文字都置中 */
 }
 
 /* 多張圖片樣式 */
