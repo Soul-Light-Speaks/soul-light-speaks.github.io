@@ -43,3 +43,19 @@ a {
   line-height: 1.6;    /* 緊湊行高 */
   font-weight: 600;
 }
+
+.back-link {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.back-link a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
