@@ -13,7 +13,7 @@ h1 {
   margin-bottom: 20px;
   font-size: 2rem;
   line-height: 1.5;
-  text-align: left; /* 改成靠左 */
+  text-align: left;
 }
 
 /* 返回連結 */
@@ -28,8 +28,8 @@ a:hover {
 }
 
 .back-link a {
-  display: inline-block; /* 讓連結可設定寬度及置中 */
-  font-size: 20px; /* ← 你可以調整數字大小 */
+  display: inline-block;
+  font-size: 20px;
 }
 
 header {
@@ -61,16 +61,21 @@ img.single-image {
   max-width: 960px;
   margin: 40px auto;
   padding: 0 20px;
-  text-align: center; /* 確保圖片+文字都置中 */
-  justify-items: center; /* ← 加這行讓圖片本身置中 */
+  text-align: center;
+  justify-items: center;
+}
+
+/* 一欄直排 */
+.image-grid.one-column {
+  grid-template-columns: 1fr !important;
 }
 
 /* 多張圖片樣式 */
 .image-grid img {
   width: 100%;
-  max-width: 240px;  /* 自訂圖片最大寬度 */
+  max-width: 240px;
   height: auto;
-  margin: 0 auto; /* 加這行讓圖片置中 */
+  margin: 0 auto;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
