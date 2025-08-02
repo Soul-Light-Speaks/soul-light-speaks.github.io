@@ -13,7 +13,7 @@ h1 {
   margin-bottom: 20px;
   font-size: 2rem;
   line-height: 1.5;
-  text-align: left;
+  text-align: center;
 }
 
 /* 返回連結 */
@@ -46,38 +46,33 @@ header {
 img.single-image {
   display: block;
   margin: 30px auto;
-  width: 60%;
+  width: 90%;
   max-width: 600px;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* 多張圖片排列容器 */
+/* 多張圖片排列容器（改為一欄直排） */
 .image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 24px;
   max-width: 960px;
   margin: 40px auto;
   padding: 0 20px;
   text-align: center;
-  justify-items: center;
-}
-
-/* 一欄直排 */
-.image-grid.one-column {
-  grid-template-columns: 1fr !important;
 }
 
 /* 多張圖片樣式 */
 .image-grid img {
-  width: 100%;
-  max-width: 240px;
+  width: 90%;
+  max-width: 600px;
   height: auto;
-  margin: 0 auto;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
 }
 
 /* 圖片文字說明 */
@@ -104,7 +99,7 @@ footer {
   color: #777;
 }
 
-/* RWD 手機版調整 */
+/* 手機版調整 */
 @media (max-width: 768px) {
   h1 {
     font-size: 1.5rem;
@@ -115,12 +110,15 @@ footer {
   }
 
   img.single-image {
-    width: 90%;
+    width: 95%;
   }
 
   .image-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
+    padding: 0 10px;
+  }
+
+  .image-grid img {
+    width: 95%;
   }
 
   .image-caption {
