@@ -18,23 +18,23 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 2.8em;
+  font-size: 3.2em;
   letter-spacing: 2px;
   margin-bottom: 0.2em;
 }
 
 /* === 文案與副段落 === */
 .intro-text {
-  font-size: 1em;
-  line-height: 1.6em;
+  font-size: 1.3em;
+  line-height: 1.8em;
   max-width: 600px;
   margin: 0 auto 1.8em;
   color: #4B3F32;     /* 暖棕中帶灰，閱讀柔和 */
 }
 
 .smaller-text {
-  font-size: 0.85em;
-  line-height: 1.6em;
+  font-size: 1.2em;
+  line-height: 1.8em;
   max-width: 500px;
   margin: 0 auto 2em;
   color: #5C5040;     /* 深一點的奶茶色 */
