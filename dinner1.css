@@ -68,7 +68,7 @@ img.single-image {
 /* 多張圖片樣式 */
 .image-grid img {
   width: 100%;
-  max-width: 100%;       /* 不會爆出格子 */
+  max-width: 240px;  /* 自訂圖片最大寬度 */
   height: auto;
   margin: 0 auto; /* 加這行讓圖片置中 */
   border-radius: 12px;
