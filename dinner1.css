@@ -62,6 +62,7 @@ img.single-image {
   margin: 40px auto;
   padding: 0 20px;
   text-align: center; /* 確保圖片+文字都置中 */
+    justify-items: center; /* ← 加這行讓圖片本身置中 */
 }
 
 /* 多張圖片樣式 */
