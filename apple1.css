@@ -1,61 +1,62 @@
 body {
-  font-family: "Noto Sans TC", sans-serif;
-  background-color: #fffaf0;
-  color: #333;
-  padding: 30px;
+  font-family: "Noto Sans TC", sans-serif; /* 網頁字體 */
+  background-color: #fffaf0;               /* 背景色 */
+  color: #333;                             /* 文字顏色 */
+  padding: 30px;                           /* 全頁上下左右內邊距 (會讓整個頁面離邊框30px) */
 }
 
 h1 {
-  color: #b85c38;
+  color: #b85c38;                          /* 標題顏色 */
 }
 
 a {
-  text-decoration: none;
-  color: #4a90e2;
+  text-decoration: none;                   /* 移除連結底線 */
+  color: #4a90e2;                          /* 連結顏色 */
 }
 
 .topics {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;              /* 圖與圖之間的間距 */
-  padding: 0 48px;        /* 左右邊留白 */
-  justify-content: flex-start;
+  display: flex;                           /* 使用 Flex 排版 */
+  flex-wrap: wrap;                         /* 自動換行 */
+  gap: 24px;                               /* 圖與圖之間的間距 卡片之間的間距 (左右間距也是這裡決定的)*/               
+  padding-left:  48px;                     /* 左邊加大 去掉左右就是兩邊留白 左右內邊距相同 */
+  padding-right: 20px;                     /* 右邊縮小 */
+  justify-content: flex-start;             /* 靠左排列，右邊可能會空白 */
 }
 
 .topic {
-  width: 390px;           /* 卡片寬度放大 */
-  text-align: center;
-  text-decoration: none;
-  color: #333;
-}
+  width: 390px;                            /* 卡片寬度放大 每張卡片的寬度 (卡片太寬，會造成右邊剩很多空間) */
+  text-align: center;                      /* 文字置中 */
+  text-decoration: none;                   /* 移除卡片內文字的底線 */
+  color: #333;                             /* 卡片內文字顏色 */
+}  
 
 .topic img {
-  width: 100%;
-  height: 480px;          /* 圖片高度拉高 */
-  object-fit: cover;      /* 圖片填滿區域，不變形 */
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;                             /* 圖片寬度跟卡片一樣寬 */
+  height: 480px;                           /* 圖片高度拉高 固定圖片高度 (太大會撐開) */
+  object-fit: cover;                       /* 圖片填滿區域，不變形 */
+  border-radius: 8px;                      /* 圖片圓角 */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);/* 陰影 */
 }
 
 .topic-title {
-  margin-top: 12px;
-  font-size: 1.3rem;  /* 調小字體 */
-  line-height: 1.6;    /* 緊湊行高 */
-  font-weight: 600;
+  margin-top: 12px;                        /* 圖片和標題之間的間距 */
+  font-size: 1.3rem;                       /* 標題字體大小 */
+  line-height: 1.6;                        /* 行距 緊湊行高 */
+  font-weight: 600;                        /* 粗體 */
 }
 
 .back-link {
-  text-align: center;
-  margin-top: 40px;
+  text-align: center;                      /* 返回連結置中 */
+  margin-top: 40px;                        /* 上方間距 */
 }
 
 .back-link a {
-  font-size: 18px;
-  font-weight: bold;
-  color: #4a90e2;
-  text-decoration: none;
+  font-size: 18px;                         /* 返回連結字體大小 */
+  font-weight: bold;                       /* 字體加粗 */
+  color: #4a90e2;                          /* 顏色 */
+  text-decoration: none;                   /* 移除底線 */
 }
 
 .back-link a:hover {
-  text-decoration: underline;
+  text-decoration: underline;              /* 滑鼠移上去加底線 */
 }
