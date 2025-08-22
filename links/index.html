@@ -5,91 +5,135 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Soul Light Speaks | Links</title>
   <style>
-    /* 背景樣式 */
-    body {
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(135deg, #d6eaff, #f9e7ff);
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
-    }
+  /* ---------- BODY ---------- */
+/* 設定整個頁面的字體、背景、排版方式 */
+body {
+  font-family: 'Arial', sans-serif;          /* 字體 */
+  margin: 0;                                 /* 取消預設外距 */
+  padding: 0;                                /* 取消預設內距 */
+  display: flex;                             /* 使用 flex 排版 */
+  flex-direction: column;                    /* 主軸方向為垂直 */
+  align-items: center;                       /* 水平置中 */
+  justify-content: flex-start;               /* 從上方開始排列 */
+  min-height: 100vh;                         /* 最小高度填滿整個視窗 */
+  background: linear-gradient(135deg, #f9f5ff, #e0d4ff); /* 漸層背景 */
+}
 
-    /* 頁面容器 */
-    .container {
-      max-width: 500px;
-      width: 90%;
-      margin-top: 40px;
-      text-align: center;
-    }
+/* ---------- CONTAINER ---------- */
+/* 包裹內容的容器，控制最大寬度和置中 */
+.container {
+  max-width: 500px;          /* 最大寬度 500px */
+  width: 90%;                /* 寬度 90% 適應手機 */
+  margin-top: 50px;          /* 上方間距 */
+  text-align: center;        /* 文字置中 */
+}
 
-    /* Logo / 頭像 */
-    .avatar {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid white;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    }
+/* ---------- AVATAR ---------- */
+/* 頭像圓形圖片 */
+.avatar {
+  width: 130px;                             /* 寬度 */
+  height: 130px;                            /* 高度 */
+  border-radius: 50%;                       /* 變成圓形 */
+  object-fit: cover;                        /* 裁切圖片填滿容器 */
+  border: 4px solid white;                  /* 白色邊框 */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);  /* 陰影 */
+  margin-bottom: 20px;                      /* 下方間距 */
+}
 
-    h1 {
-      margin: 20px 0 10px;
-      font-size: 24px;
-      color: #333;
-    }
+/* ---------- TITLE ---------- */
+/* 標題文字 */
+h1 {
+  margin: 10px 0 5px;                       /* 上下間距 */
+  font-size: 26px;                          /* 字體大小 */
+  color: #3b0a6b;                           /* 主網站深紫色 */
+}
 
-    p {
-      margin: 0 0 30px;
-      color: #555;
-      font-size: 16px;
-    }
+/* ---------- SUBTITLE ---------- */
+/* 副標題文字 */
+p {
+  margin: 0 0 30px;                         /* 下方間距 */
+  font-size: 16px;                          /* 字體大小 */
+  color: #5c3a8b;                           /* 主網站副色 */
+}
 
-    /* 按鈕樣式 */
-    .link-btn {
-      display: block;
-      margin: 12px auto;
-      padding: 15px 25px;
-      width: 100%;
-      max-width: 400px;
-      background: white;
-      color: #333;
-      text-decoration: none;
-      border-radius: 12px;
-      font-size: 18px;
-      font-weight: bold;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: all 0.2s ease-in-out;
-    }
+/* ---------- SOCIAL LINKS CONTAINER ---------- */
+/* 社群按鈕的容器，垂直排列並間隔 */
+.social-links {
+  display: flex;              /* 使用 flex 排版 */
+  flex-direction: column;     /* 垂直排列 */
+  gap: 15px;                  /* 按鈕之間間距 15px */
+  align-items: center;        /* 水平置中 */
+  margin-bottom: 40px;        /* 下方間距 */
+}
 
-    .link-btn:hover {
-      background: #f0f0f0;
-      transform: translateY(-3px);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-    }
+/* ---------- SOCIAL BUTTON ---------- */
+/* 單一社群按鈕樣式 */
+.social-btn {
+  display: flex;                             /* 按鈕內部也使用 flex */
+  align-items: center;                       /* 垂直置中圖標與文字 */
+  justify-content: center;                   /* 水平置中 */
+  gap: 12px;                                 /* 圖標與文字間距 */
+  width: 100%;                               /* 滿寬 */
+  max-width: 400px;                          /* 最大寬度 */
+  padding: 12px 20px;                        /* 上下、左右內距 */
+  border-radius: 25px;                       /* 圓角按鈕 */
+  background-color: #3b0a6b;                 /* 按鈕背景色 */
+  color: white;                              /* 按鈕文字顏色 */
+  font-weight: bold;                          /* 粗體文字 */
+  font-size: 18px;                            /* 文字大小 */
+  text-decoration: none;                      /* 去掉底線 */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);    /* 按鈕陰影 */
+  transition: all 0.2s ease-in-out;           /* 滑鼠經過動畫效果 */
+}
 
-    /* 底部小字 */
-    footer {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #888;
-    }
+/* ---------- SOCIAL BUTTON ICON ---------- */
+/* 社群按鈕內的小圖示 */
+.social-btn img {
+  width: 24px;          /* 圖示寬度 */
+  height: 24px;         /* 圖示高度 */
+}
+
+/* ---------- SOCIAL BUTTON HOVER ---------- */
+/* 滑鼠經過按鈕效果 */
+.social-btn:hover {
+  background-color: #5c3a8b;                 /* 顏色變深 */
+  transform: translateY(-3px);               /* 向上浮動 */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);   /* 陰影加深 */
+}
+
+/* ---------- FOOTER ---------- */
+/* 底部版權文字 */
+footer {
+  margin-top: 20px;      /* 上方間距 */
+  font-size: 14px;       /* 字體大小 */
+  color: #888;           /* 灰色文字 */
+}
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="../portrait.jpg" alt="Soul Light Speaks" class="avatar">
-    <h1>✨ Soul Light Speaks ✨</h1>
+    <img src="portrait.jpg" alt="Soul Light Speaks" class="avatar">
+    <h1> Soul Light Speaks </h1>
     <p>Awaken Your Inner Light</p>
-    <a href="https://soul-light-speaks.github.io/index.html" class="link-btn">🌐 官方網站</a>
-    <a href="https://youtube.com" class="link-btn">🎥 YouTube 頻道</a>
-    <a href="https://www.instagram.com/soul.light.speaks/" class="link-btn">📸 Instagram</a>
+
+    <div class="social-links">
+      <a href="https://soul-light-speaks.github.io/index.html" class="social-btn">
+        <img src="icons/website.png" alt="網站"> 官方網站
+      </a>
+      <a href="https://www.youtube.com/你的頻道ID" class="social-btn">
+        <img src="icons/youtube.png" alt="YouTube"> YouTube
+      </a>
+      <a href="https://www.instagram.com/soul.light.speaks/" class="social-btn">
+        <img src="icons/instagram.png" alt="Instagram"> Instagram
+      </a>
+      <a href="mailto:你的信箱@example.com" class="social-btn">
+        <img src="icons/mail.png" alt="Email"> 聯絡我
+      </a>
+    </div>
+
+    <footer>
+      © 2025 Soul Light Speaks
+    </footer>
   </div>
-  <footer>
-    © 2025 Soul Light Speaks
-  </footer>
 </body>
 </html>
