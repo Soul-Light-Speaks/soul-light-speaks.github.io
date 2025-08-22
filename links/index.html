@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +8,15 @@
   /* ---------- BODY ---------- */
 /* 設定整個頁面的字體、背景、排版方式 */
 body {
-  font-family: 'Arial', sans-serif;          /* 字體 */
+  font-family: "Noto Sans TC", sans-serif;          /* 字體 */
   margin: 0;                                 /* 取消預設外距 */
   padding: 0;                                /* 取消預設內距 */
   display: flex;                             /* 使用 flex 排版 */
   flex-direction: column;                    /* 主軸方向為垂直 */
   align-items: center;                       /* 水平置中 */
   justify-content: flex-start;               /* 從上方開始排列 */
-  min-height: 100vh;                         /* 最小高度填滿整個視窗 */
-  background: linear-gradient(135deg, #fffaf0, #e0d4ff); /* 漸層背景 */
+  background-color: #fffaf0;                /* 官網背景色 */
+  color: #333;                              /* 文字顏色 */
 }
 
 /* ---------- CONTAINER ---------- */
@@ -96,7 +96,7 @@ p {
 /* ---------- SOCIAL BUTTON HOVER ---------- */
 /* 滑鼠經過按鈕效果 */
 .social-btn:hover {
-  background-color: #5c3a8b;                 /* 顏色變深 */
+  background-color: #3b78c5;                 /* 官網 hover顏色 */
   transform: translateY(-3px);               /* 向上浮動 */
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);   /* 陰影加深 */
 }
@@ -112,10 +112,27 @@ footer {
 </head>
 <body>
   <div class="container">
+    <!-- 頭像 -->
     <img src="images/portrait.jpg" alt="Soul Light Speaks" class="avatar">
+     <!-- 標題與副標題 -->
     <h1> Soul Light Speaks </h1>
-    <p>Awaken Your Inner Light</p>
+    <p>一道光，無聲地來
+這裡，是靈魂緩緩展開的地方。
 
+靈魂裡的光在說話 Soul Light Speaks
+這不是傳授，
+而是靈魂深處的光。
+不說教，只有溫柔引領。
+我們各自走在自己的路上，
+光與影同行，自由卻不孤單。
+
+這些話，
+或許現在還不急著懂。
+多年後回來看看，
+你也許會輕聲說：
+「原來，你早就知道我會走到這裡。」</p>
+
+    <!-- 社群連結 -->
     <div class="social-links">
       <a href="https://soul-light-speaks.github.io/index.html" class="social-btn">
         <img src="icons/website.png" alt="網站"> 官方網站
@@ -126,11 +143,9 @@ footer {
       <a href="https://www.instagram.com/soul.light.speaks/" class="social-btn">
         <img src="icons/instagram.png" alt="Instagram"> Instagram
       </a>
-      <a href="mailto:你的信箱@example.com" class="social-btn">
-        <img src="icons/mail.png" alt="Email"> 聯絡我
-      </a>
     </div>
 
+        <!-- 底部版權 -->
     <footer>
       © 2025 Soul Light Speaks
     </footer>
