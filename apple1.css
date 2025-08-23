@@ -18,7 +18,7 @@ a {
   display: flex;                           /* 使用 Flex 排版 */
   flex-wrap: wrap;                         /* 自動換行 */
   gap: 24px;                               /* 圖與圖之間的間距 卡片之間的間距 (左右間距也是這裡決定的)*/               
-  padding-left:  200px;                     /* 左邊加大 去掉左右就是兩邊留白 左右內邊距相同 */
+  padding-left:  150px;                     /* 左邊加大 去掉左右就是兩邊留白 左右內邊距相同 */
   padding-right: 0px;                     /* 右邊縮小 */
   justify-content: flex-start;             /* 靠左排列，右邊可能會空白 */
 }
