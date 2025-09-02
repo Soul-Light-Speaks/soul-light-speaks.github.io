@@ -1,3 +1,15 @@
+/* ---------- AVATAR ---------- */
+/* 頭像圓形圖片 */
+.avatar {
+  width: 130px;                             /* 寬度 */
+  height: 130px;                            /* 高度 */
+  border-radius: 50%;                       /* 變成圓形 */
+  object-fit: cover;                        /* 裁切圖片填滿容器 */
+  border: 4px solid white;                  /* 白色邊框 */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);  /* 陰影 */
+  margin-bottom: 20px;                      /* 下方間距 */
+}
+
 body {
   font-family: "Helvetica Neue", "Segoe UI", sans-serif;
   background-color: #FAF3E0;  /* 溫柔米黃背景 */
