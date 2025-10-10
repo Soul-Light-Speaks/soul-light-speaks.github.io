@@ -113,6 +113,28 @@ blockquote.smaller-text {
   display: block;
 }
 
+.language-switcher {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.lang-link {
+  color: #555;
+  text-decoration: none;
+  font-size: 0.9em;
+  margin: 0 5px;
+}
+
+.lang-link:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.lang-link.active {
+  font-weight: bold;
+  color: #000;
+}
+
 /* === 全站連結樣式 === */
 a {
   color: #9C6B30; /* 暖棕色連結 */
