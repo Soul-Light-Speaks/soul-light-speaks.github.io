@@ -61,44 +61,27 @@ a {
   text-decoration: underline;              /* 滑鼠移上去加底線 */
 }
 
-.language-switcher {
-  margin-top: 10px;
-  font-size: 0.9rem;
-  color: #888;
-}
-.language-switcher a {
-  color: #555;
-  text-decoration: none;
-}
-.language-switcher a:hover {
-  color: #000;
-  text-decoration: underline;
-}
-.language-switcher a.active {
-  font-weight: bold;
-  color: #000;
-}
 
-/* 語言切換樣式（放共用 style.css） */
+/* === 語言切換樣式（最終建議版） === */
 .language-switcher {
-  text-align: center;
-  margin: 12px 0;
-  font-size: 0.95rem;
-  color: #666;
+  text-align: center;     /* 語言切換置中 */
+  margin: 12px 0;         /* 上下間距 */
+  font-size: 0.95rem;     /* 字體大小稍小一點 */
+  color: #666;            /* 預設文字顏色 */
 }
 
 .language-switcher .lang-link {
-  color: #666;
-  text-decoration: none;
-  margin: 0 6px;
+  color: #666;            /* 普通狀態顏色 */
+  text-decoration: none;  /* 移除底線 */
+  margin: 0 6px;          /* 左右間距 */
 }
 
 .language-switcher .lang-link:hover {
-  color: #000;
-  text-decoration: underline;
+  color: #000;            /* 滑過變黑 */
+  text-decoration: underline; /* 滑過加底線 */
 }
 
 .language-switcher .lang-link.active {
-  font-weight: 600;
-  color: #000;
+  font-weight: 600;       /* 目前語言加粗 */
+  color: #000;            /* 強調為黑色 */
 }
