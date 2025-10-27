@@ -82,6 +82,5 @@ a {
 }
 
 .language-switcher .lang-link.active {
-  font-weight: 600;       /* 目前語言加粗 */
   color: #000;            /* 強調為黑色 */
 }
