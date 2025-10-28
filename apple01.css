@@ -70,6 +70,12 @@ a {
   color: #666;            /* 預設文字顏色 */
 }
 
+header {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .language-switcher .lang-link {
   color: #666;            /* 普通狀態顏色 */
   text-decoration: none;  /* 移除底線 */
