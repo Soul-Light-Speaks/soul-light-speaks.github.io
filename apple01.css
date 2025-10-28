@@ -64,7 +64,7 @@ a {
 
 /* === 語言切換樣式（最終建議版） === */
 .language-switcher {
-  text-align: center;     /* 語言切換置中 */
+  text-align: left;     /* 語言切換靠左 */
   margin: 12px 0;         /* 上下間距 */
   font-size: 0.95rem;     /* 字體大小稍小一點 */
   color: #666;            /* 預設文字顏色 */
