@@ -70,9 +70,8 @@ a {
   color: #666;            /* 預設文字顏色 */
 }
 
-/* header 設為固定寬度區域，確保語言切換跟 h1 同一條左邊線 */
 header {
-  max-width: 1200px;      /* 網頁版心寬度 */
+  max-width: 900px;      /* 網頁版心寬度 */
   margin: 0 auto;         /* 讓整個 header 置中，但內部是靠左的 */
   text-align: left;       /* header 裡文字靠左 */
 }
