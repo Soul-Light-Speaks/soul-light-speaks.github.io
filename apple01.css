@@ -45,6 +45,14 @@ a {
   font-weight: 600;                        /* 粗體 */
 }
 
+.topic-declaration {
+  margin-top: 15px;
+  font-size: 17px;
+  color: #888;
+  letter-spacing: 2px;
+  line-height: 1.8;
+}
+
 .back-link {
   text-align: center;                      /* 返回連結置中 */
   margin-top: 40px;                        /* 上方間距 */
