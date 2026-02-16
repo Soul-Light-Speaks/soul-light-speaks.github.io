@@ -69,6 +69,29 @@ a {
   text-decoration: underline;              /* 滑鼠移上去加底線 */
 }
 
+.sub-section {
+  margin-bottom: 60px;
+}
+
+.sub-title {
+  font-size: 1.6rem;
+  color: #b85c38;
+  margin-bottom: 20px;
+}
+
+.image-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.image-row img {
+  width: 260px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 
 /* === 語言切換樣式（最終建議版） === */
 .language-switcher {
