@@ -77,6 +77,8 @@ a {
   font-size: 1.6rem;
   color: #b85c38;
   margin-bottom: 20px;
+  border-left: 4px solid #b85c38;
+  padding-left: 12px;
 }
 
 .image-row {
