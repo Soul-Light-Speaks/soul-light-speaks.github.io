@@ -86,23 +86,13 @@ img.single-image {
 
 .image-carousel {
   display: flex;
-  flex-direction: row;
   gap: 24px;
-
   overflow-x: auto;
-  overflow-y: hidden;
-
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-
-  padding: 20px 10px;
-  max-width: 100%;
 }
 
 .image-carousel > div {
   flex: 0 0 auto;
-  width: 320px;           /* 可自己調 */
-  scroll-snap-align: start;
+  min-width: 320px;
 }
 
 .image-carousel img {
