@@ -56,7 +56,7 @@ img.single-image {
 /* 多張圖片排列容器（改為一欄直排） */
 .image-grid {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;/* ← 這一行讓它由上到下 */
   align-items: center;
   gap: 24px;
   max-width: 960px;
@@ -83,6 +83,36 @@ img.single-image {
   font-size: 18px;
   color: #333;
 }
+
+.image-carousel {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+
+  padding: 20px 10px;
+  max-width: 100%;
+}
+
+.image-carousel > div {
+  flex: 0 0 auto;
+  width: 320px;           /* 可自己調 */
+  scroll-snap-align: start;
+}
+
+.image-carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
 
 /* 段落文字 */
 p {
