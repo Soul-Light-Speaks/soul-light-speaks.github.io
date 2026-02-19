@@ -90,9 +90,10 @@ img.single-image {
   overflow-x: auto;
 }
 
-.image-carousel > div {
+.image-carousel >div{
   flex: 0 0 auto;
   min-width: 320px;
+  text-align: center;   /* ← 關鍵這一行 */
 }
 
 .image-carousel img {
