@@ -86,23 +86,17 @@ img.single-image {
 
 .image-carousel {
   display: flex;
-  gap: 24px;
+  gap: 16px;
   overflow-x: auto;
-}
-
-.image-carousel >div{
-  flex: 0 0 auto;
-  min-width: 320px;
-  text-align: center;   /* ← 關鍵這一行 */
+  padding-bottom: 8px;
 }
 
 .image-carousel img {
-  width: 100%;
+  flex: 0 0 auto;     /* 🔥 關鍵：不允許自動換行 */
+  width: 120px;       /* 你說可以很小 */
   height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 8px;
 }
-
 
 
 /* 段落文字 */
