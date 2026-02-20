@@ -97,6 +97,10 @@ img.single-image {
   height: auto;
   border-radius: 8px;
 }
+.image-carousel > div {
+  flex: 0 0 auto;
+  min-width: 320px;
+}
 
 
 /* 段落文字 */
