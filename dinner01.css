@@ -84,6 +84,14 @@ img.single-image {
   color: #333;
 }
 
+.small-caption {
+  font-size: 12px;  /* 整個 caption 文字大小 */
+}
+
+.small-caption .gift-text {
+  font-size: 10px;  /* 贈語文字更小 */
+}
+
 .image-carousel {
   display: flex;
   gap: 16px;
