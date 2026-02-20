@@ -107,6 +107,32 @@ img.single-image {
 }
 
 
+/* 語言切換黑色 & 顯示修正 */
+.language-switcher {
+  text-align: left;     /* 語言靠左 */
+  margin: 12px 0;
+  font-size: 0.95rem;
+  color: #000;          /* 預設黑色 */
+  display: block;       /* 確保可見 */
+}
+
+.language-switcher .lang-link {
+  color: #000;          /* 黑色 */
+  font-weight: bold;    /* 強調 */
+  text-decoration: none;
+  margin: 0 6px;
+}
+
+.language-switcher .lang-link:hover {
+  text-decoration: underline;
+}
+
+.language-switcher .lang-link.active {
+  color: #000;
+  font-weight: bold;
+}
+
+
 
 /* 段落文字 */
 p {
