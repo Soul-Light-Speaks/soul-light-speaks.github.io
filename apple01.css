@@ -156,6 +156,7 @@ header {
 
 /* 卡片內文字段落 <p> 設定 */
 .image-carousel .card p {
-  text-align: center;         
+  text-align: center;      
+  margin-top: 0;  
 }
 
