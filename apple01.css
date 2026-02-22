@@ -128,21 +128,25 @@ header {
 .image-carousel .card {
   flex: 0 0 auto;
   width: 320px;
+  height: 480px;             /* 統一卡片高度 */
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: #fff;
+  background-color: transparent; /* 去掉白底 */
 }
 
 .image-carousel img {
-  width: 100%;       /* 圖片寬度填滿卡片 */
-  height: auto;      /* 高度自動，保持原比例 */
-  display: block;    /* 避免底部空隙 */
+  width: auto;               /* 依比例調整寬度 */
+  height: 100%;              /* 高度填滿卡片 */
+  max-width: 100%;           /* 避免超出卡片寬度 */
+  object-fit: contain;       /* 保持比例，不裁切 */
   border-radius: 8px;
-  margin: 0 auto;    /* 水平置中 */
+  display: block;
+  margin: 0 auto;
 }
+
 
 
 .image-carousel .card p {
