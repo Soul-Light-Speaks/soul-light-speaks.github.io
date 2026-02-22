@@ -87,14 +87,21 @@ a {
   overflow-x: auto;     /* 🔥 開啟橫向滑動 */
   flex-wrap: nowrap;   /* 🔥 不允許換行 */
   padding-bottom: 12px;
+  scroll-snap-type: x mandatory;
 }
 
 
 .image-row img {
-  width: 260px;
-  height: 360px;
-  object-fit: cover;
+  width: 100%;
+  height: auto;     /* 🔥 跟 image-carousel 一樣 */
   border-radius: 8px;
+}
+
+
+.image-row .card {
+  flex: 0 0 auto;   /* 🔥 不縮、不換行、不被擠 */
+  width: 320px;     /* 🔥 跟上面 image-carousel 一樣 */
+  scroll-snap-align: start;
 }
 
 
@@ -106,13 +113,14 @@ a {
   color: #666;            /* 預設文字顏色 */
 }
 
+
 header {
   max-width: 900px;      /* 網頁版心寬度 */
   text-align: left;       /* header 裡文字靠左 */
 }
 
 .language-switcher .lang-link {
-  color: #666;            /* 普通狀態顏色 */
+  color: #000;            /* 預設黑色 */
   text-decoration: none;  /* 移除底線 */
   margin: 0 6px;          /* 左右間距 */
 }
