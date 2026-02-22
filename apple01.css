@@ -134,3 +134,25 @@ header {
   color: #000;            /* 強調為黑色 */
   font-weight: bold;
 }
+
+
+/* === image carousel === */
+.image-carousel {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  padding-bottom: 12px;
+}
+
+.image-carousel .card {
+  flex: 0 0 auto;     /* 🔥 鎖住卡片，不被擠、不換行 */
+  width: 320px;
+}
+
+.image-carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
