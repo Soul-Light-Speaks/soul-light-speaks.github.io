@@ -123,6 +123,7 @@ header {
   flex-wrap: nowrap;
   padding-bottom: 12px;
   scroll-snap-type: x mandatory;
+  background-color: transparent; /* 透明背景 */
 }
 
 .image-carousel .card {
@@ -138,9 +139,9 @@ header {
 }
 
 .image-carousel img {
-  max-width: 100%;         /* 不超過卡片寬度 */
-  max-height: 100%;        /* 不超過卡片高度 */
-  object-fit: contain;     /* 保持比例、完整顯示、不裁切 */
+ width: 100%;          /* 強制填滿卡片寬度 */
+  height: 100%;         /* 強制填滿卡片高度 */
+  object-fit: contain;  /* 保持比例、不裁切 */
   display: block;
   margin: 0 auto;
   border-radius: 8px;
