@@ -81,28 +81,7 @@ a {
   padding-left: 12px;
 }
 
-.image-row {
-  display: flex;
-  gap: 16px;
-  overflow-x: auto;     /* 🔥 開啟橫向滑動 */
-  flex-wrap: nowrap;   /* 🔥 不允許換行 */
-  padding-bottom: 12px;
-  scroll-snap-type: x mandatory;
-}
 
-
-.image-row img {
-  width: 100%;
-  height: auto;     /* 🔥 跟 image-carousel 一樣 */
-  border-radius: 8px;
-}
-
-
-.image-row .card {
-  flex: 0 0 auto;   /* 🔥 不縮、不換行、不被擠 */
-  width: 320px;     /* 🔥 跟上面 image-carousel 一樣 */
-  scroll-snap-align: start;
-}
 
 
 /* === 語言切換樣式（最終建議版） === */
