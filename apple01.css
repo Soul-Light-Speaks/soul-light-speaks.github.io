@@ -127,27 +127,24 @@ header {
 
 .image-carousel .card {
   flex: 0 0 auto;
-  width: 320px;
-  height: 480px;             /* 統一卡片高度 */
+  width: 320px;             /* 卡片固定寬度 */
+  height: 480px;            /* 卡片統一高度 */
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: transparent; /* 去掉白底 */
+  background-color: transparent; /* 透明背景 */
 }
 
 .image-carousel img {
-  width: auto;               /* 依比例調整寬度 */
-  height: 100%;              /* 高度填滿卡片 */
-  max-width: 100%;           /* 避免超出卡片寬度 */
-  object-fit: contain;       /* 保持比例，不裁切 */
-  border-radius: 8px;
+  max-width: 100%;         /* 不超過卡片寬度 */
+  max-height: 100%;        /* 不超過卡片高度 */
+  object-fit: contain;     /* 保持比例、完整顯示、不裁切 */
   display: block;
   margin: 0 auto;
+  border-radius: 8px;
 }
-
-
 
 .image-carousel .card p {
   margin-top: 10px;
