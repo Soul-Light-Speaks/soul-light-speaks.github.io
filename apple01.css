@@ -139,10 +139,3 @@ header {
   object-fit: cover;    /* 不變形，裁切填滿 */
   border-radius: 8px;
 }
-
-.image-carousel .card p {
-  margin-top: 10px;
-  line-height: 1.6;
-  text-align: center;   /* 🔥 確保文字置中 */
-}
-
