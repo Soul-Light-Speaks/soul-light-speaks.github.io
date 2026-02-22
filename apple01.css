@@ -83,9 +83,12 @@ a {
 
 .image-row {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  gap: 16px;
+  overflow-x: auto;     /* 🔥 開啟橫向滑動 */
+  flex-wrap: nowrap;   /* 🔥 不允許換行 */
+  padding-bottom: 12px;
 }
+
 
 .image-row img {
   width: 260px;
