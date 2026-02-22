@@ -128,7 +128,6 @@ header {
 .image-carousel .card {
   flex: 0 0 auto;
   width: 320px;
-  /* height: 400px;  移除固定高度 */
   text-align: center;
   display: flex;
   flex-direction: column;
