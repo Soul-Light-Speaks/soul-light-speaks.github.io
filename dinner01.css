@@ -121,7 +121,7 @@ header {
 }
 
 .language-switcher .lang-link {
-  color: #000;          /* 黑色 */
+  color: #666;          /* 一般灰色 */
   text-decoration: none;
   margin: 0 6px;
 }
