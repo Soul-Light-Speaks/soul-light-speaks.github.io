@@ -112,8 +112,13 @@ img.single-image {
   text-align: left;     /* 語言靠左 */
   margin: 12px 0;
   font-size: 0.95rem;
-  color: #000;          /* 預設黑色 */
+  color: #666;          /* 預設黑色 */
   display: block;       /* 確保可見 */
+}
+
+header {
+  max-width: 900px;
+  text-align: left;
 }
 
 .language-switcher .lang-link {
@@ -124,6 +129,7 @@ img.single-image {
 }
 
 .language-switcher .lang-link:hover {
+  color:#000;
   text-decoration: underline;
 }
 
